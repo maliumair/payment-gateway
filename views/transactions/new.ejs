@@ -1,0 +1,60 @@
+<div class="container">
+    <div class="row mt-3 p-2 justify-content-center">
+        <div class="col-md-12 col-12">
+            <h3 style="text-align: center">New Transaction</h3>
+        </div>
+    </div>
+    <div class="row mt-3 p-2 justify-content-center">
+        <div class="col-md-6 col-12">
+        <form id="transaction-form" class="form-horizontal" method="POST" action="/" enctype="application/json">
+            <div class="form-group">
+                <label class="control-label col-sm-12" for="account">Bank Account Number:</label>
+                <div class="col-sm-10">          
+                    <input type="text" class="form-control" id="account" placeholder="Account Number (9, 11, 12, 13, 16 digits)" name="account">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-8" for="bank_name">Bank Name:</label>
+                <div class="col-sm-10">          
+                  <select class="form-control" id="bank_name" name="bank_name">
+                    <option value="ABL">Alllied Bank Limited</option>
+                    <option value="HBL">Habib Bank Limited</option>
+                    <option value="MCB">Muslim Commercial Bank</option>
+                    <option value="UBL">United Bank Limited</option>
+                  </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-5" for="cnic">CNIC Number:</label>
+                <div class="col-sm-10">          
+                    <input type="text" class="form-control" id="cnic" placeholder="xxxxx-xxxxxxx-x" name="cnic">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="amount">Amount:</label>
+                <div class="col-sm-10">          
+                    <input type="number" class="form-control" id="amount" placeholder="Enter Amount" name="amount">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="email">Email:</label>
+                <div class="col-sm-10">
+                    <input type="email" class="form-control" id="email" placeholder="Enter Email Address" name="email">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-5" for="mobile">Mobile Number:</label>
+                <div class="col-sm-10">          
+                    <input type="number" class="form-control" id="mobile" placeholder="03xx-xxxxxxx" name="mobile">
+                </div>
+            </div>
+            <div class="form-group">        
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button class="btn btn-success">Submit</button>
+                </div>
+            </div>
+        </form>
+        <p id="error" style="color: red"></p>
+    </div>
+</div>
+</div>
