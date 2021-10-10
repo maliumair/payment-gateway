@@ -16,7 +16,7 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
 
 const mongoose = require('mongoose')
-mongoose.connect(process.env.DATABASE_URL || 'mongodb+srv://user001:user001@cluster0.byjqr.mongodb.net/payment_gateway?retryWrites=true&w=majority', {useNewUrlParser : true})
+mongoose.connect(process.env.DATABASE_URL || 'Mongo Connection String Here', {useNewUrlParser : true})
 const db = mongoose.connection
 db.on('error',error => console.error(error))
 db.once('open', () => console.log('Connected to MongoDB'));
