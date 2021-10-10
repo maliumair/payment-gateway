@@ -69,7 +69,7 @@ router.post('/transactions', async (req, res)=>{
 
 
 const exchangeRateCall =async() =>{
-    var url = 'https://www.alphavantage.co/query?function=CURRENCY_EXCHANGE_RATE&from_currency=PKR&to_currency=USD&apikey=OGAU5ILIHB4LUPYP';
+    var url = 'https://www.alphavantage.co/query?function=CURRENCY_EXCHANGE_RATE&from_currency=PKR&to_currency=USD&apikey=Your API KEY';
     await axios.get(url)
     .then(function(exchangeRate){
         exchangeRateToday = exchangeRate.data['Realtime Currency Exchange Rate']['5. Exchange Rate']
